@@ -1,0 +1,47 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+.hobbies-column-odd{
+    float:left;
+    width:60%;
+}
+
+.hobbies-column-even{
+    float: right;
+    width:60%;
+}
+.hobbies-row:after{
+    content:"";
+    display:table;
+    clear:both;
+}
+
+h1{
+    padding:10px;
+    margin-left: 50%;
+    margin-right: 50%;
+}
+
+#toTopBtn{
+    display: inline-block;
+    background-color: orange;
+    width:50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    margin:30px;
+    position: fixed;
+    bottom:30px;
+    right:30px;
+    transition: background-color .5s;
+    z-index: 1000;
+}
+#toTopBtn:hover{
+    cursor:pointer;
+    background-color: goldenrod;
+}
+#toTopBtn:active{
+    background-color: #555555;
+}

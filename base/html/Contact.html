@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link href="../css/common-Screen-display.css" rel="stylesheet">
+    <link href="../css/contact-screen-display.css" rel="stylesheet">
+    <link href="../css/print-display.css" rel="stylesheet" media="print">
+</head>
+<body>
+<div class="top-nav" id="top-nav-print">
+    <a href="../../index.html">Home</a>
+    <a href="About.html">About</a>
+    <a href="Hobbies.html">Hobbies</a>
+    <a href="Skills.html">Skills</a>
+    <a href="Contact.html">Contact</a>
+</div>
+
+<div class = "content">
+    <h2 class="uppercase" id="contact-block">Contact</h2>
+    <section class="section">
+        <h1>Contact information</h1>
+
+        <form name="contactForm" class="form" action="contactFeedback.html" method="get"  onsubmit="return checkSubmit()" autocomplete="off">
+            <p>
+                <label for="firstName">
+                    <span>First name:</span>
+                    <input type="text" name="firstName" id="firstName"  minlength="2" required/>
+                    <span class="error" aria-live = polite></span>
+                </label>
+            </p>
+
+            <p>
+                <label for="lastName">
+                    <span>Last name:</span>
+                    <input type="text" name="lastName" id="lastName" minlength="2" required/>
+                    <span class="error" aria-live = polite></span>
+                </label>
+            </p>
+
+            <div>
+                <p>Preferred way of contact:<br>
+                    <label>
+                        <input type="radio" name="contact" value="1">
+                    </label>Phone<br>
+                    <label>
+                        <input type="radio" name="contact" value="2">
+                    </label>Email<br>
+                    <label>
+                        <input type="radio" name="contact" value="3">
+                    </label>Text Message<br>
+                </p>
+            </div>
+            <p>
+                <label for="phone">
+                    <span>Phone:</span>
+                    <input type="tel" name="phone" id="phone" minlength="9" maxlength="9" required/>
+                    <span class="error" aria-live = polite></span>
+                </label>
+            </p>
+            <p>
+                <label for="mail">
+                    <span>Email address:</span>
+                    <input type="email" name="mail" id="mail" required/>
+                    <span class="error" aria-live = polite></span>
+                </label>
+            </p>
+            <p><input type="submit" name="submitButton" value="Submit"></p>
+
+        </form>
+        <script src="../js/contact.js"></script>
+    </section>
+    <section class="section" id="section-right">
+        <h3 class="uppercase"> Information</h3>
+        <!--a list of links to my profile and my personal account web pages, without bullets-->
+        <ul class="center">
+            <li><a href="https://www.linkedin.com/in/michelle-yu91/" target="_blank">LinkedIn</a></li>
+            <li><a href="../Peiming%20Yu_Resume_Software%20Engineer%20Intern.docx.pdf" target="_blank">Resume</a></li>
+            <li><a href="mailto:peiming@bu.edu">Email</a></li>
+        </ul>
+    </section>
+</div>
+
+<div class="footer">
+    <p>Footer</p>
+    <p id="print-notice">Print from:Peiming Yu's contact page</p>
+</div>
+
+</body>
+</html>

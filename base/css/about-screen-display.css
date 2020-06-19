@@ -1,0 +1,17 @@
+#image-swap{
+    background-image:url("../multimedia/images/about-img-swap.jpg");
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 320px;
+    height: 213px;
+
+}
+
+#image-swap:hover{
+    background-image:url("../multimedia/images/abput-img-hover.JPG");
+}
+
+#myStory{
+    display: none;
+}

@@ -1,0 +1,44 @@
+body-print {
+    font-family: Arial, Helvetica,sans-serif, Verdana;
+    font-size: 14pt;
+    margin: 0;
+    padding:0;
+    color: #000000;
+}
+
+#top-nav-print a{
+    display:none;
+}
+.content{
+    width:600px;
+    height:600px;
+    top:50%;
+    left:50%;
+}
+.footer{
+    clear:both;
+    width:100%;
+}
+.footer p{
+    margin:0;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 10px;
+}
+#print-notice{
+    display: block;
+    border-style: dashed;
+}
+
+.section{
+    float:left;
+    width:100%;
+    height: 500px;
+}
+#section-right{
+    float: bottom;
+}
+#image-swap{
+    display:none;
+}
+
