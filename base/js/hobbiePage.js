@@ -1,6 +1,5 @@
-$("#toTopBtn").click(function(){
-    $(window).scrollTop(0);
-});
+
+$("#toTopBtn").hide();
 
 $(window).scroll(function(){
     if($(window).scrollTop() > 300){
@@ -8,4 +7,8 @@ $(window).scroll(function(){
     }else{
         $("#toTopBtn").fadeOut();
     }
+});
+
+$("#toTopBtn").click(function(){
+    $(window).scrollTop(0);
 });
