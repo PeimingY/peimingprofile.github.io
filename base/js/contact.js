@@ -56,7 +56,7 @@ email.addEventListener("input", function (event) {
 function checkEmail(){
     let emailPattern = /\S+@\S+\.\S+/;
     if(!email.value.match(emailPattern)){
-        emailError.textContent = "Input must contains @ .";
+        emailError.textContent = "Input must contains @ & . ";
         return false;
     }
     emailError.textContent = "";

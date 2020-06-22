@@ -21,10 +21,10 @@
     <section class="section">
         <h1>Contact information</h1>
 
-        <form name="contactForm" class="form" action="contactFeedback.html" method="get"  onsubmit="return checkSubmit()" autocomplete="off">
+        <form name="contactForm" class="form" action="contactFeedback.html" method="get"  onsubmit="return checkSubmit()">
             <p>
                 <label for="firstName">
-                    <span>First name:</span>
+                    <span>First name:</span><br>
                     <input type="text" name="firstName" id="firstName"  minlength="2" required/>
                     <span class="error" aria-live = polite></span>
                 </label>
@@ -32,7 +32,7 @@
 
             <p>
                 <label for="lastName">
-                    <span>Last name:</span>
+                    <span>Last name:</span><br>
                     <input type="text" name="lastName" id="lastName" minlength="2" required/>
                     <span class="error" aria-live = polite></span>
                 </label>
@@ -53,14 +53,14 @@
             </div>
             <p>
                 <label for="phone">
-                    <span>Phone:</span>
+                    <span>Phone:</span><br>
                     <input type="tel" name="phone" id="phone" minlength="9" maxlength="9" required/>
                     <span class="error" aria-live = polite></span>
                 </label>
             </p>
             <p>
                 <label for="mail">
-                    <span>Email address:</span>
+                    <span>Email:</span><br>
                     <input type="email" name="mail" id="mail" required/>
                     <span class="error" aria-live = polite></span>
                 </label>
